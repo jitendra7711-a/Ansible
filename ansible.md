@@ -307,7 +307,7 @@ accelerate_connect_timeout = 5.0
  
     - name: copied httpd.conf file on target machine
       copy:
-        src: httpd.conf
+        src: /etc/httpd/conf/httpd.conf
         dest: /etc/httpd/conf/httpd.conf
  
     - name: copied index.html
@@ -372,7 +372,7 @@ accelerate_connect_timeout = 5.0
 #### *Here change the ami, region, security group, key name*
 
 ```yaml
-  ---
+---
 - name: create an ec2 instance
   hosts: all
   vars_files:
