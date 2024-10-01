@@ -287,9 +287,9 @@ accelerate_connect_timeout = 5.0
 
 - ansible-playbook playbook.yml
  
-#### *Go to host and run the below command to check the user created inside group*
+#### *Go to host (node) and run the below command to check the user created inside group*
 
-- cat /etc/group
+- cat /etc/group   or   cat /etc/passwd | grep -i thor
 
 ### *Handler*
 - vim configure-appache.yml   (*Inside ansible directory*)
