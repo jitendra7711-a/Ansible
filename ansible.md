@@ -4,10 +4,10 @@
 - ssh-keygen
 - ip a s
 - cd .ssh
-- vim authorized_keys
-- cat id_rsa.pub
+- vim authorized_key //
+- cat id_rsa.pub //
   
-#### *Here incase of controller copy paste the public key of other two instances and paste the keys in the vim file and likewise do the same for other 2 instances to establish connection*
+#### *Here incase of copy the controller public key and paste in two node instances and node ip in controller to establish connection*
 
 ### *Controller*
 - systemctl start sshd 
